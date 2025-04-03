@@ -18,7 +18,7 @@ app.use(cookieParser());
 dotenv.config();
 const PORT = process.env.PORT;
 app.use("/api/auth", authRoutes);
-app.use("/api/message", messageRoutes);
+app.use("/api/messages", messageRoutes);
 app.listen(PORT || 5000, () => {
   console.log("server is listening on port " + PORT);
   connectDB();
