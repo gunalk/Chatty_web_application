@@ -6,16 +6,11 @@ import { connectDB } from "./lib/db.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import { app, server } from "./lib/socket.js";
-import path from "path";
-import { fileURLToPath } from 'url';
 
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "*",  // Allows all origins
     credentials: true,
   })
 );
