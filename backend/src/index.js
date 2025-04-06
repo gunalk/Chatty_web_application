@@ -10,7 +10,7 @@ import { app, server } from "./lib/socket.js";
 
 app.use(
   cors({
-    origin: ["http://localhost:5173","https://chatty-web-application-frontend.onrender.com"],
+    origin: ["http://localhost:5173","https://chatty-web-application-frontend.onrender.com","https://chattyv3.netlify.app/"],
     credentials: true,
   })
 );
